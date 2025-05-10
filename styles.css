@@ -130,29 +130,18 @@ section h2 {
   color: #4b0082;
 }
 
-.social-buttons {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 1000;
-}
+<div class="social-buttons">
+  <a href="https://wa.me/27817236182" target="_blank" aria-label="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat with Pretty Gallaxy on WhatsApp">
+  </a>
+  <a href="https://www.instagram.com/prettygalaxy_sa" target="_blank" aria-label="Instagram">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Pretty Gallaxy SA on Instagram">
+  </a>
+  <a href="https://www.facebook.com/prettygalaxy_sa" target="_blank" aria-label="Facebook">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg" alt="Pretty Gallaxy SA on Facebook">
+  </a>
+</div>
 
-.social-buttons a img {
-  width: 45px;
-  height: 45px;
-  transition: transform 0.3s ease;
-  border-radius: 50%;
-  background-color: white;
-  padding: 5px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.social-buttons a img:hover {
-  transform: scale(1.1);
-}
 
 }
 
