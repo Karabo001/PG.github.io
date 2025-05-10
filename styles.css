@@ -1,169 +1,175 @@
-/* styles.css */
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #fdf6f9;
-  color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5;
+    color: #333;
 }
 
-header {
-  background-color: #4b0082; /* Dark purple */
-  color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+/* General Layout */
+header, section, footer {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-header img {
-  height: 60px;
-  border-radius: 50%;
+/* Logo */
+.logo {
+    height: 60px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: 600;
-  transition: color 0.3s ease;
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c003e;
+    padding: 10px 20px;
 }
 
-nav a:hover {
-  color: #ffc0cb; /* Light pink */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #f8a6d3;
+}
+
+/* Hero Section */
 .hero {
-  background: linear-gradient(to right, #4b0082, #ffc0cb);
-  color: white;
-  text-align: center;
-  padding: 5rem 2rem;
+    background: linear-gradient(180deg, #2c003e, #3f004e);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
 .hero button {
-  margin-top: 1.5rem;
-  padding: 0.75rem 2rem;
-  background-color: white;
-  color: #4b0082;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
+    background-color: #f8a6d3;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .hero button:hover {
-  background-color: #ffc0cb;
+    background-color: #f484c2;
 }
 
-section {
-  padding: 3rem 2rem;
-}
-
-.services, .testimonials, .contact {
-  background-color: #fff;
-  border-radius: 12px;
-  margin: 2rem auto;
-  max-width: 1200px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
+/* Sections */
 section h2 {
-  color: #4b0082;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.service-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
-}
-
-.service-item {
-  background-color: #fce4ec; /* soft pink */
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.testimonials .testimonial {
-  padding: 1rem;
-  border-left: 4px solid #ffc0cb;
-  margin-bottom: 1rem;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.contact input, .contact textarea {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact button {
-  background-color: #4b0082;
-  color: white;
-  border: none;
-  padding: 0.75rem;
-  font-weight: bold;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact button:hover {
-  background-color: #ffc0cb;
-  color: #4b0082;
-}
-
-<div class="social-buttons">
-  <a href="https://wa.me/27817236182" target="_blank" aria-label="WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat with Pretty Gallaxy on WhatsApp">
-  </a>
-  <a href="https://www.instagram.com/prettygalaxy_sa" target="_blank" aria-label="Instagram">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Pretty Gallaxy SA on Instagram">
-  </a>
-  <a href="https://www.facebook.com/prettygalaxy_sa" target="_blank" aria-label="Facebook">
-    <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg" alt="Pretty Gallaxy SA on Facebook">
-  </a>
-</div>
-
-
-}
-
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #4b0082;
-  color: white;
-  font-size: 0.9rem;
-}
-
-@media (max-width: 600px) {
-  nav {
     text-align: center;
-    margin-top: 1rem;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .service-list {
-    grid-template-columns: 1fr;
-  }
+    margin-bottom: 40px;
+    color: #2c003e;
 }
+
+.services, .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service, .testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex: 1 1 300px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form button {
+    background-color: #2c003e;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #3f004e;
+}
+
+/* Floating Social Bar */
+.floating-socials {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.floating-socials a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.floating-socials a img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2c003e;
+    color: #fff;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        background: #2c003e;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .floating-socials {
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
